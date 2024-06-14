@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer ou Rejoindre une Partie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Créer ou Rejoindre une Partie</h1>
+
+    <form id="create-join-game-form">
+        <label for="playerName">Votre Nom:</label>
+        <input type="text" id="playerName" name="playerName" required>
+        
+        <label for="action">Action:</label>
+        <select id="action" name="action" required>
+            <option value="create">Créer une nouvelle partie</option>
+            <option value="join">Rejoindre une partie existante</option>
+        </select>
+        <br>
+        <label for="gameId">ID de la Partie (uniquement pour rejoindre):</label>
+        <input type="text" id="gameId" name="gameId">
+        <br>
+        
+    </form>
+    <button type="submit" id="create-join-game-button">Soumettre</button>
+    <div class="footer-barrier">
+        <p>&copy; 2024 Hatim. Tous droits réservés.</p>
+    </div>
+
+    <script src="js/createOrJoinGame.js"></script>
+</body>
+</html>

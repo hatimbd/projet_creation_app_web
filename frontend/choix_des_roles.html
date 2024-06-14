@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir un Rôle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Choisir un Rôle</h1>
+    <div class="container">
+        <form id="choose-role-form" class="form">
+            <div class="form-group">
+                <label for="role">Choisissez votre rôle:</label>
+                <select id="role" name="role" required>
+                    <option value="maitre_des_mots">Maître des mots</option>
+                    <option value="maitre_des_intuitions">Maître des intuitions</option>
+                </select>
+            </div>
+        </form>
+        <button type="submit" id="choose-role-button" class="btn">Confirmer</button>
+    </div>
+    <div class="footer-barrier">
+        <p>&copy; 2024 Hatim. Tous droits réservés.</p>
+    </div>
+    <script src="js/chooseRole.js"></script>
+</body>
+</html>

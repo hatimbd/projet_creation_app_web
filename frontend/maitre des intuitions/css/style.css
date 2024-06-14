@@ -1,0 +1,83 @@
+@import url(personnes.css);
+@import url(field.css);
+@import url(score.css);
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    background-image: url(../img/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body > div {
+    width: 800px;
+
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #eee;
+}
+h3 {
+    text-align: center;
+    color: #eee;
+}
+label {
+    text-align: center;
+    color: #eee;
+}
+
+#increment-score-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #3f0402d4;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: #eee;
+}
+scores{
+    align-items: center;
+}
+.carte {
+    transition: transform 0.2s;
+    display: inline-block; /* This ensures that the cards behave as blocks */
+    text-align: center;
+}
+
+.carte:hover {
+    transform: scale(1.1);
+}
+.footer-barrier p {
+    margin: 0 auto; /* Supprime la marge par défaut du paragraphe */
+    width: fit-content;
+}
+.footer-barrier {
+    text-align: center;
+    background-color: #000000;
+    padding: 5px 0px; 
+    color: #eee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body > div {
+        width: 100%;
+    }
+}

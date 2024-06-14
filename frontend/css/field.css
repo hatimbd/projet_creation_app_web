@@ -1,0 +1,51 @@
+field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+field-parts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+field-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+
+    border: 1px solid #444;
+
+    background: center no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: rgb(255, 247, 247);
+}
+
+field-part::after { 
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+
+field-part.triggered {
+    border: 1px solid green;
+    box-shadow: 0 0 4px green;
+}
+
+@media screen and (max-width: 600px) {
+
+    field-part {
+        width: 30px;
+        height: 30px;
+    }
+}

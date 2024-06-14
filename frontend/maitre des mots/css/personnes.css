@@ -1,0 +1,53 @@
+
+
+personnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+personne {
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid #666;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    background: center no-repeat;
+    background-size: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    cursor: pointer;
+}
+
+personne.active {
+    border: 1px solid green;
+    box-shadow: 0 0 4px green;
+}
+
+#maitre-int {
+    background-image: url(../img/espion.png);
+    text-align: center;
+    color: #eee;
+}
+
+#maitre-mot {
+    background-image: url(../img/agent.png);
+    text-align: center;
+    color: #eee;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    personne {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+    }
+}
